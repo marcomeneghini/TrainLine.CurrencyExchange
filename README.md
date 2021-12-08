@@ -7,7 +7,7 @@ GET api/currencyexchange?source={sourceCurrency}&destination={destinationCurrenc
 *  the remote configuration can be cached for a short time, from local configuration (temporary TTL managed by controller, not in config)
 *  always prefer the Latest configuration from remote source
 *  if remote source not available and cached elements too old, throw an error "exchange rate not updated" throws exception is currency not found
-*  perform Validation on CurrencyCode
+*  NTH - perform Validation on CurrencyCode and amount 
 
 # Test Cases
 1. Source currency not found (404)
@@ -32,4 +32,4 @@ GET api/currencyexchange?source={sourceCurrency}&destination={destinationCurrenc
 ## MVP3
 *  save every exchange 
 *  Use CQRS/ES on currencies to keep track of the history 
-
+*  add structured log (Serilog + ELK)

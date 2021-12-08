@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TrainLine.CurrencyExchange.Domain\TrainLine.CurrencyExchange.Domain.csproj" />
+    <ProjectReference Include="..\TrainLine.CurrencyExchange.Infrastructure\TrainLine.CurrencyExchange.Infrastructure.csproj" />
+  </ItemGroup>
+
+
+</Project>

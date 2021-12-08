@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainLine.CurrencyExchange.Api", "TrainLine.CurrencyExchange.Api\TrainLine.CurrencyExchange.Api.csproj", "{997ABF2C-10CF-4AEC-897A-1BBDADCAA9D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{36BC0DAC-F9AF-4F9D-BA9F-A1EFE28062A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainLine.CurrencyExchange.Infrastructure", "TrainLine.CurrencyExchange.Infrastructure\TrainLine.CurrencyExchange.Infrastructure.csproj", "{CF51B21B-5ADE-468F-8CA8-F6EC3BEA965D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainLine.CurrencyExchange.Domain", "TrainLine.CurrencyExchange.Domain\TrainLine.CurrencyExchange.Domain.csproj", "{D11DB11B-1138-4D0F-B5F8-0D86459DACD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D1747BD9-A3AD-4357-BD34-B6C78BCCDF67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainLine.CurrencyExchange.UnitTests", "TrainLine.CurrencyExchange.UnitTests\TrainLine.CurrencyExchange.UnitTests.csproj", "{7EBDD786-5201-4372-A506-1E2C305C15F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A9D7F30F-7BE5-45B5-A79D-961CF1F61339}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{997ABF2C-10CF-4AEC-897A-1BBDADCAA9D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997ABF2C-10CF-4AEC-897A-1BBDADCAA9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997ABF2C-10CF-4AEC-897A-1BBDADCAA9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997ABF2C-10CF-4AEC-897A-1BBDADCAA9D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF51B21B-5ADE-468F-8CA8-F6EC3BEA965D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF51B21B-5ADE-468F-8CA8-F6EC3BEA965D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF51B21B-5ADE-468F-8CA8-F6EC3BEA965D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF51B21B-5ADE-468F-8CA8-F6EC3BEA965D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11DB11B-1138-4D0F-B5F8-0D86459DACD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11DB11B-1138-4D0F-B5F8-0D86459DACD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11DB11B-1138-4D0F-B5F8-0D86459DACD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11DB11B-1138-4D0F-B5F8-0D86459DACD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EBDD786-5201-4372-A506-1E2C305C15F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EBDD786-5201-4372-A506-1E2C305C15F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EBDD786-5201-4372-A506-1E2C305C15F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBDD786-5201-4372-A506-1E2C305C15F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{997ABF2C-10CF-4AEC-897A-1BBDADCAA9D3} = {36BC0DAC-F9AF-4F9D-BA9F-A1EFE28062A9}
+		{CF51B21B-5ADE-468F-8CA8-F6EC3BEA965D} = {36BC0DAC-F9AF-4F9D-BA9F-A1EFE28062A9}
+		{D11DB11B-1138-4D0F-B5F8-0D86459DACD1} = {36BC0DAC-F9AF-4F9D-BA9F-A1EFE28062A9}
+		{7EBDD786-5201-4372-A506-1E2C305C15F1} = {D1747BD9-A3AD-4357-BD34-B6C78BCCDF67}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {404F0F02-DA39-4F74-AC89-834DF44F3C47}
+	EndGlobalSection
+EndGlobal

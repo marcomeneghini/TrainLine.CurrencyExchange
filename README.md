@@ -1,3 +1,6 @@
+
+
+
 ## MVP1: create an API that performs Currency Exchange
 
 GET api/currencyexchange?source={sourceCurrency}&destination={destinationCurrency}&amount={amount}
@@ -22,6 +25,7 @@ GET api/currencyexchange?source={sourceCurrency}&destination={destinationCurrenc
 *  Try to avoid throwing exceptions because of performances
 *  Catch the remaining exception in a Middleware 
 *  Add integration tests (test infrastructure)
+*  Verify "rounding" strategy during money exchange
 *  Use different exceptions over "httpCode" (the domain should not care about any Http stuff)
 *  ExchangeRateDto - EpochToDatetimeConverter / DynamicToDictionaryConverter
 *  Event Driven Architecture 
@@ -29,7 +33,13 @@ GET api/currencyexchange?source={sourceCurrency}&destination={destinationCurrenc
 *  *  CurrencyExchange service subscribes to CurrencyExchangeUpdated and saves last exchange rate on event arrived
 
 
+
 ## MVP3
+*  add authentication/authorization
 *  save every exchange 
-*  Use CQRS/ES on currencies to keep track of the history 
+*  Use CQRS/ES on currencies to keep track of the history of every variation for every currency ( derive Currency entity)
 *  add structured log (Serilog + ELK)
+
+
+
+

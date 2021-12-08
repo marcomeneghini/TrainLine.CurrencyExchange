@@ -1,4 +1,11 @@
-
+## How To run the code
+* Clone and compile the repository
+* Set the Api project as Startup project
+* Run the solution and the Swagger landing page will appear
+* To test the GET /api/CurrencyExchange try to set as source and destination EUR / GBP / USD
+* set an amount > 0
+* In case source or destination are set with different values than the ones provided, a 404 with  managed error will be returned
+* In case an amount <= 0, a 400 with  managed error will be returned
 
 
 ## MVP1: create an API that performs Currency Exchange

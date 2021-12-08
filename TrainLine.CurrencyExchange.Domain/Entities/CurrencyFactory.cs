@@ -18,7 +18,7 @@ namespace TrainLine.CurrencyExchange.Domain.Entities
             // get ALWAYS the latest exchange rate from the remote source
 
             // // IF not available check if there is a valid one in the cache
-            // // (this mitigates the case the remote source is not temporary available)
+            // // (this mitigates the case the remote source is  temporary not available)
         }
     }
 }

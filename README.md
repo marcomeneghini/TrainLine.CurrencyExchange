@@ -19,6 +19,8 @@ GET api/currencyexchange?source={sourceCurrency}&destination={destinationCurrenc
 
 
 ## MVP2 : Decouple Currenncy Exchange from Getting last exchange rate remotely, inprocess
+*  Try to avoid throwing exceptions because of performances
+*  Catch the remaining exception in a Middleware 
 *  Add integration tests (test infrastructure)
 *  Use different exceptions over "httpCode" (the domain should not care about any Http stuff)
 *  ExchangeRateDto - EpochToDatetimeConverter / DynamicToDictionaryConverter

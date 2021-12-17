@@ -48,6 +48,11 @@ namespace TrainLine.CurrencyExchange.UnitTests
             Assert.Equal(sourceCurrencyCode, currency.Code);
         }
 
+        /// <summary>
+        /// To fix this, create a wrapper arount the IMemoryCache 
+        /// that can be easly mocked 
+        /// </summary>
+        /// <returns></returns>
         [Fact(Skip = "Having problem with 'cache.Set(c' getting NullException...Coming back later if any time left")]
         public async Task GIVEN_GetCurrencyByCode_WHEN_SourceCurrencyExistsRemotely_THEN_ReturnCurrency()
         {

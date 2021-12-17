@@ -63,5 +63,23 @@ namespace TrainLine.CurrencyExchange.UnitTests
             Assert.NotNull(exchangeResponse);
             Assert.Equal(6, exchangeResponse.DestinationAmount);
         }
+
+        [Theory]
+        [InlineData(1, 1, 1)]
+        [InlineData(1, 0.5, 0.5)]
+        [InlineData(2, 2, 4)]
+        [InlineData(12.5, 1.12345, 14.04312)] //14.043125 => verify the Round(5)
+        public void GIVEN_ExchangeMoney_WHEN_DestinationCurrencyExists_AND_AmountIsX_AND_ExchangeRateIsY_THEN_ReturnsAmountXY(decimal sourceAmount, decimal exchangeRate, decimal destinationAmount)
+        {
+            var existingDestinationCode = "existingDestinationCode";
+            currentexchangeRate.Rates = new Dictionary<string, decimal>()
+            {
+                {existingDestinationCode,exchangeRate }
+            };
+
+            var exchangeResponse = currency.ExchangeMoney(existingDestinationCode, sourceAmount);
+            Assert.NotNull(exchangeResponse);
+            Assert.Equal(destinationAmount, exchangeResponse.DestinationAmount);
+        }
     }
 }
